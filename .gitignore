@@ -1,0 +1,9 @@
+index.html
+wp-config.php
+wp-content/uploads
+wp-content/db.php
+wp-content/cache
+*.sql
+*.log
+.idea
+.project
