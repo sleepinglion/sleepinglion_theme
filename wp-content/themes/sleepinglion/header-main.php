@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<![endif]-->
   <meta charset="<?php bloginfo('charset'); ?>" />
-	<title>혁신! 경기도지사 남경필입니다. </title>
+	<title><?php bloginfo( 'name' ) ?></title>
 	<meta name="description" content="<?php if ( is_single() ) {
         single_post_title('', true); 
     } else {
@@ -23,7 +23,7 @@
 </head>
 <body <?php body_class() ?>>
 <header id="header">
-	<div class="container">			
+	<div class="container">
 		<div class="row">
 <div id="small_menu">
 	<a id="mobile_menu" href=""><span class="glyphicon glyphicon-menu-hamburger"></span><span class="text">메뉴</span></a>
