@@ -1,5 +1,5 @@
 
-	
+
 	<!-- close main -->
 	</div>
 	<!-- close mom -->
@@ -8,25 +8,25 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-6">
-				<address><?php echo __('Address','sleepinglion') ?></address><br class="hidden-xs hidden-sm" />
-				COPYRIGHT 2015 ALL RIGHTS RESERVED
+				<address><?php echo __('Address', 'sleepinglion') ?></address><br class="hidden-xs hidden-sm" />
+				CopyLeft. 2012, SL. All wrongs reserved.
 			</div>
 			<div class="col-sm-12 col-md-6">
 				<ul class="social_link col-xs-12 col-sm-12 col-md-6">
 					<li class="col-xs-4"><a href="http://blog.naver.com/npil2580" class="blog_link" title="새창에서 열림(도지사 남경필 Blog)" target="_blank"><span class="point">B</span><span>log</span></a></li>
-					<li class="col-xs-4"><a href="https://twitter.com/yesKP" class="twitter_link" title="새창에서 열림(도지사 남경필 Twitter)" target="_blank"><span class="point">T</span><span>witter</span></a></li>					
+					<li class="col-xs-4"><a href="https://twitter.com/yesKP" class="twitter_link" title="새창에서 열림(도지사 남경필 Twitter)" target="_blank"><span class="point">T</span><span>witter</span></a></li>
 					<li class="col-xs-4"><a href="https://www.facebook.com/NamKyungpil" class="facebook_link" title="새창에서 열림(도지사 남경필 Facebook)" target="_blank"><span class="point">F</span><span>ace Book</span></a></li>
-				</ul>		
+				</ul>
 				<ul id="home_sitemap_link" class="hidden-xs hidden-sm col-md-6 ">
-					<li><a href="/sitemap" title="<?php echo __('Sitemap','sleepinglion') ?>"><?php echo __('Sitemap','sleepinglion') ?></a></li>					
-					<li><a href="/" title="<?php echo __('Home','sleepinglion') ?>"><?php echo __('Home','sleepinglion') ?></a></li>
+					<li><a href="/sitemap" title="<?php echo __('Sitemap', 'sleepinglion') ?>"><?php echo __('Sitemap', 'sleepinglion') ?></a></li>
+					<li><a href="/" title="<?php echo __('Home', 'sleepinglion') ?>"><?php echo __('Home', 'sleepinglion') ?></a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
 </footer>
 <?php wp_footer() ?>
-<?php if(is_single() OR is_page()): ?>
+<?php if (is_single() or is_page()): ?>
 <script type="text/javascript">
 		try {
 			ttparam = {
@@ -51,17 +51,17 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title"><?php echo __('Search','sleepinglion') ?></h4>
+        <h4 class="modal-title"><?php echo __('Search', 'sleepinglion') ?></h4>
       </div>
       <div class="modal-body">
         	<form action="/">
       		<div class="input-group form-group-lg">
-      <input type="search" name="s" <?php if(isset($_GET['s'])): ?>value="<?php echo $_GET['s'] ?>"<?php endif ?> class="form-control" placeholder="검색어를 넣어주세요">
+      <input type="search" name="s" <?php if (isset($_GET['s'])): ?>value="<?php echo $_GET['s'] ?>"<?php endif ?> class="form-control" placeholder="검색어를 넣어주세요">
       <span class="input-group-btn">
       				<button class="btn btn-default btn-lg" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
       			</span>
       			</div>
-      		</form> 	
+      		</form>
       </div>
       <!-- <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
