@@ -13,9 +13,9 @@
 			</div>
 			<div class="col-sm-12 col-md-6">
 				<ul class="social_link col-xs-12 col-sm-12 col-md-6">
-					<li class="col-xs-4"><a href="http://blog.naver.com/npil2580" class="blog_link" title="새창에서 열림(도지사 남경필 Blog)" target="_blank"><span class="point">B</span><span>log</span></a></li>
-					<li class="col-xs-4"><a href="https://twitter.com/yesKP" class="twitter_link" title="새창에서 열림(도지사 남경필 Twitter)" target="_blank"><span class="point">T</span><span>witter</span></a></li>
-					<li class="col-xs-4"><a href="https://www.facebook.com/NamKyungpil" class="facebook_link" title="새창에서 열림(도지사 남경필 Facebook)" target="_blank"><span class="point">F</span><span>ace Book</span></a></li>
+					<li class="col-xs-4"><a href="" class="blog_link" title="" target="_blank"><span class="point">B</span><span>log</span></a></li>
+					<li class="col-xs-4"><a href="" class="twitter_link" title="" target="_blank"><span class="point">T</span><span>witter</span></a></li>
+					<li class="col-xs-4"><a href="" class="facebook_link" title="" target="_blank"><span class="point">F</span><span>ace Book</span></a></li>
 				</ul>
 				<ul id="home_sitemap_link" class="hidden-xs hidden-sm col-md-6 ">
 					<li><a href="/sitemap" title="<?php echo __('Sitemap', 'sleepinglion') ?>"><?php echo __('Sitemap', 'sleepinglion') ?></a></li>
@@ -26,26 +26,6 @@
 	</div>
 </footer>
 <?php wp_footer() ?>
-<?php if (is_single() or is_page()): ?>
-<script type="text/javascript">
-		try {
-			ttparam = {
-				sitekey : "d7a63e551a0ea0726b2ab2495e06bea78e68df4d",
-				ttalkmaindiv : ["ttalk_div_<?php echo get_current_blog_id(); ?>_<?php global $post; echo $post->ID; ?>"],
-				ttalkratingdiv : ["ttalk_rating_div_<?php echo get_current_blog_id(); ?>_<?php global $post; echo $post->ID; ?>"],
-				article_uid : ["<?php echo get_current_blog_id(); ?>_<?php global $post; echo $post->ID; ?>"],
-				article_url : ["<?php echo get_permalink(); ?>"],
-				article_catecd : [""],
-				article_img : [""],
-				article_title : ["<?php echo get_the_title(); ?>"],
-				mobile : "n",
-				list_view : ["a"]
-				}
-				var ttalk = new TTalkLoad();
-				ttalk.init();
-			} catch(e) {}
-</script>
-<?php endif ?>
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" style="margin:20px 0 0">
   <div class="modal-dialog">
     <div class="modal-content">

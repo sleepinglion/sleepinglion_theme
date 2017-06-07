@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html <?php language_attributes() ?>>
 <head>
-	<!--[if IE]>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<![endif]-->
   <meta charset="<?php bloginfo('charset'); ?>" />
-	<title><?php bloginfo( 'name' ) ?></title>
-	<meta name="description" content="<?php if ( is_single() ) {
-        single_post_title('', true); 
-    } else {
-        bloginfo('name'); echo " - "; bloginfo('description');
-    }
+	<title><?php bloginfo('name') ?></title>
+	<meta name="description" content="<?php if (is_single()) {
+    single_post_title('', true);
+} else {
+    bloginfo('name');
+    echo " - ";
+    bloginfo('description');
+}
     ?>" />
   <link rel="shortcut icon" href="/wp-content/themes/sleepinglion/images/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<?php wp_head(); ?>
-	<!--[if lt IE 9]>
-		<link rel="stylesheet" type="text/css" href="/wp-content/themes/sleepinglion/css/ie.css" />
-		<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <script type="text/javascript" src="/wp-content/themes/sleepinglion/js/response_src.js"></script>		
+  <!--[if IE]>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<![endif]-->
 </head>
 <body <?php body_class() ?>>
@@ -27,17 +24,17 @@
 		<div class="row">
 <div id="small_menu">
 	<a id="mobile_menu" href=""><span class="glyphicon glyphicon-menu-hamburger"></span><span class="text">메뉴</span></a>
-	<a id="search_btn" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-search"></span><span class="text">검색</span></a>
-</div>	
+	<a id="search_btn" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-search"></span><span class="text"><?php echo __('search', 'sleepinglion') ?></span></a>
+</div>
 			<div class="col-xs-12">
-				<h1><a href="<?php echo home_url('/') ?>" title="<?php echo get_bloginfo() ?>"><?php echo get_bloginfo() ?></a></h1>									
+				<h1><a href="<?php echo home_url('/') ?>" title="<?php echo get_bloginfo() ?>"><?php echo get_bloginfo() ?></a></h1>
 				<?php require ABSPATH.'wp-content'.DIRECTORY_SEPARATOR.'cache'.DIRECTORY_SEPARATOR.'main_menu.html' ?>
 			</div>
 			<div id="top_right">
 				<div id="top_menu" class="col-lg-12">
 					<ul>
-						<li><a href="http://www.gg.go.kr" title="새창으로 열림(경기도 홈페이지)" target="_blank"><?php echo __('GG Home Page','sleepinglion') ?></a></li>
-						<li><a href="/sitemap" title="사이트맵"><?php echo __('Site Map','sleepinglion') ?></a></li>
+						<li><a href="" title="" target="_blank"><?php echo __('GG Home Page', 'sleepinglion') ?></a></li>
+						<li><a href="/sitemap" title=""><?php echo __('Site Map', 'sleepinglion') ?></a></li>
 					</ul>
 				</div>
 				<div class="col-lg-12">
